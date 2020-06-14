@@ -10,7 +10,7 @@ connect.then((db) => {
     });
     newDish.save().then((dish) => {
         console.log(dish);
-        Dishes.find({}).exec();
+       return Dishes.find({}).exec();
     })
     .then((dishes) => {
         console.log(dishes);
