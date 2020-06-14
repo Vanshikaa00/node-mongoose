@@ -11,7 +11,11 @@ connect.then((db) => {
     })
     .then((dish) => {
         console.log(dish);
+<<<<<<< HEAD
       return  Dishes.find({}).exec();
+=======
+       return Dishes.find({}).exec();
+>>>>>>> 0e1ef902a055102a70222ba5472df2b74845c8af
     })
     .then((dishes) => {
         console.log(dishes);
